@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #00AEFF;
+  font-family: Comfortaa;
+  height: 100vh;
+  overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70%;
+}
+
+.hide {
+  display: none;
+}
+
+.form_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Comfortaa;
+  margin: 20px 0;
+}
+
+.form_group select {
+  border: none;
+  background-color: #eeeeee;
+  padding: 15px 25px;
+  font-family: inherit;
+  outline: 0;
+}
+
+.form_group select:focus {
+  border: 2px solid #00AEFF;
+}
+
+.form_group label {
+  padding: 5px 0;
+  font-family: inherit;
+}
+
+.form_group input {
+  border: 2px solid transparent;
+  font-family: inherit;
+  padding: 15px 25px;
+  background-color: #eeeeee;
+}
+
+.form_group input:focus {
+  border: 2px solid #00AEFF;
+}
+
+.action_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button {
+  padding: 15px 25px;
+  background-color: #00AEFF;
+  color: #fff;
+  border: 2px solid transparent;
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 1px;
+  border-radius: 100px;
+}
+
+.button:hover, .button:active {
+  outline: none;
+  border: solid 2px #00AEFF;
+  top: 5px;
+  background-color: #fff;
+  color: #00AEFF;
+  letter-spacing: 2px;
+}
+
+.out_button {
+  background-color: #fff;
+  padding: 15px 25px;
+  color: #00AEFF;
+  border: 2px solid #00AEFF;
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  letter-spacing: 1px;
+  border-radius: 100px;
+}
+
+.out_button:hover, .out_button:active {
+  outline: none;
+  top: 5px;
+  background-color: #00AEFF;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.transfer_section .form {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 450px;
+  padding: 45px 20px 100px;
+}
+/*# sourceMappingURL=style.css.map */

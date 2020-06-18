@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG - Transfer Airtime</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <h1>Navbar</h1>
+    </nav>
+
+
+    <main>
+        <div class="title">
+            <h2>Transfer Airtime To Interns</h2>
+        </div>
+        <div class="transfer_section">
+            
+            <div class="form">
+                <div class="form_group">
+                    <label for="network">Select a network provider</label>
+                    <select name="currency" id="">
+                        <option value="">Select Currency</option>
+                        <option value="airtel">Airtel</option>
+                        <option value="mtn">MTN</option>
+                        <option value="glo">Glo</option>
+                        <option value="etisalat">Etisalat</option>
+                    </select>
+            </div>
+            <div class="form_group">
+                <label for="amount">How much airtime are you sending?</label>
+                <input type="number" name="amount" id="amount" placeholder="Amount being sent">
+            </div>
+            <div class="form_group">
+                <label for="phoneNumber">What is the recipient's number</label>
+                <input type="number" name="phoneNumber" id="phoneNumber" placeholder="Recipient Number">
+            </div>
+            <div class="action_group">
+                <button class="button" type="submit">Transfer Airtime</button>
+                <button class="out_button" id="add">Add one more</button>
+            </div>
+            </div>
+        
+        </div>
+            
+
+        <!-- To show only when transaction is successful -->
+
+        <div class="transaction_successful hide">
+            <h2>Your transaction was successful</h2>
+            <button id="resend">Send Another</button>
+        </div>
+        
+    </main>
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
