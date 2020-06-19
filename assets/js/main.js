@@ -18,8 +18,12 @@ const options = {
     method: "POST",
     headers: passHeaders,
     body: data,
-    // redirect: follow
+    
 }
+
+
+
+
 
 
 fetch(`${baseUrl}/bills/airtime/purchase`, options)

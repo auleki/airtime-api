@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Comfortaa&family=Indie+Flower&family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto+Condensed&family=Staatliches&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,14 +9,22 @@
 body {
   background-color: #00AEFF;
   font-family: Comfortaa;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 nav {
   width: 100%;
-  padding: 25px;
-  background-color: #fff;
+  padding: 15px;
+  background-color: #00AEFF;
+  -webkit-box-shadow: -1px 3px 13px 0px #0091d4;
+          box-shadow: -1px 3px 13px 0px #0091d4;
+  text-align: center;
+}
+
+nav img {
+  width: 100px;
+  height: auto;
 }
 
 main {
@@ -38,6 +46,13 @@ main {
 
 .title {
   font-family: "Staatliches";
+  padding: 25px 0 5px;
+  text-align: center;
+  color: #333;
+}
+
+.title h2 {
+  letter-spacing: 2px;
 }
 
 .hide {
@@ -52,7 +67,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Comfortaa;
+  font-family: "Roboto Condensed";
   margin: 20px 0;
 }
 
@@ -68,9 +83,16 @@ main {
   border: 2px solid #00AEFF;
 }
 
+.form_group select .option {
+  font-family: Comfortaa;
+  font-size: 45px;
+}
+
 .form_group label {
   padding: 5px 0;
   font-family: inherit;
+  color: #00AEFF;
+  font-size: 1rem;
 }
 
 .form_group input {
@@ -100,11 +122,12 @@ main {
   border: 2px solid transparent;
   -webkit-transition: 150ms ease-in;
   transition: 150ms ease-in;
+  font-family: "Staatliches";
   cursor: pointer;
   font-size: 1rem;
   position: relative;
   letter-spacing: 1px;
-  border-radius: 100px;
+  border-radius: 5px;
 }
 
 .button:hover, .button:active {
@@ -123,11 +146,12 @@ main {
   border: 2px solid #00AEFF;
   -webkit-transition: 150ms ease-in;
   transition: 150ms ease-in;
+  font-family: "Staatliches";
   cursor: pointer;
   font-size: 1rem;
   position: relative;
   letter-spacing: 1px;
-  border-radius: 100px;
+  border-radius: 5px;
 }
 
 .out_button:hover, .out_button:active {
@@ -142,10 +166,61 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.transfer_section .form {
+.transfer_section {
+  margin: 50px 0;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.transfer_section:hover {
+  -webkit-box-shadow: -1px 3px 13px 0px #797979;
+          box-shadow: -1px 3px 13px 0px #797979;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.transfer_section .form {
   width: 450px;
   padding: 45px 20px 100px;
+}
+
+footer {
+  width: 100%;
+  padding: 25px 0;
+  background-color: #008bcc;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 521px) {
+  .transfer_section {
+    width: 80%;
+  }
+  .transfer_section .form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 466px) {
+  .transfer_section {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+  }
+  .transfer_section .form {
+    width: 100%;
+  }
+  .action_group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .action_group button {
+    margin: 15px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
