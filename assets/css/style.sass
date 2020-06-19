@@ -66,9 +66,13 @@ main
         
         &:focus
             border: 2px solid $primary-color
-        .option 
+        option 
             font-family: $para-font
-            font-size: 45px
+            // font-size: 45px
+            border: none
+            outline: none
+            &:hover
+                background-color: #fff
     label 
         padding: 5px 0
         font-family: inherit
@@ -80,8 +84,9 @@ main
         font-family: inherit
         padding: 15px 25px
         background-color: $gray-color
+        border: 2 solid transparent
         // border-radius: 100px
-        &:focus
+        &:focus, &:hover
             border: 2px solid $primary-color
 
 .action_group 
@@ -129,6 +134,14 @@ main
         background-color: $primary-color
         color: $secondary-color
         letter-spacing: 2px
+
+// Hide arrows in input element on all browsers 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+  margin: 0
+
 
 input[type="number"] 
    -moz-appearance: textfield
