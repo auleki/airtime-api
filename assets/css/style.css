@@ -210,6 +210,12 @@ footer {
   .transfer_section .form {
     width: 100%;
   }
+  .transfer_section:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: none;
+            transform: none;
+  }
   .action_group {
     display: -webkit-box;
     display: -ms-flexbox;
