@@ -3,6 +3,7 @@ const secKey = "uqr7729i2pix";
 
 const baseUrl = "api.wallets.africa"
 
+// Comment for PR possible 
 
 const passHeaders = new Headers();
 passHeaders.append("Content-Type", "application/json");
